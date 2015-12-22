@@ -1,1 +1,1 @@
-for learning puppet
+Write puppet code to learn puppet
