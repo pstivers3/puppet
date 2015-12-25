@@ -2,6 +2,7 @@
 class memcached {
   package { 'memcached':
     ensure => installed,
+    # ensure  => absent,
   }
 
   file { '/etc/memcached.conf':

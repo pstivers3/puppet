@@ -1,1 +1,8 @@
-include 'pc1.pp', 'pc2.pp'
+node 'pc1' {
+  include puppet
+}
+
+node 'pc2' {
+  include puppet
+  include memcached
+}
