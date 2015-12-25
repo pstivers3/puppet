@@ -1,1 +1,1 @@
-import 'pc1.pp', 'pc2.pp'
+include 'pc1.pp', 'pc2.pp'
