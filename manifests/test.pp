@@ -1,5 +1,7 @@
-if $::operatingsystem == 'Ubuntu' {
-  notify { 'Running on Ubuntu': }
-} else {
-  notify { 'Not running on Ubuntu':}
+define tmpfile() {
+  file { "/tmp/${name}":
+    content => "Hello, world\n",
+  }
 }
+
+tmpfile { ['a', 'b', 'c']: }
