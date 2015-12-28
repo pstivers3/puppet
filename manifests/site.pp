@@ -4,5 +4,6 @@ node 'pc1' {
 
 node 'pc2' {
   include puppet
-#  include memcached
+  include memcached
+  include admin::ntp
 }
