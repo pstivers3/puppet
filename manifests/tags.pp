@@ -1,7 +1,7 @@
 node 'bitfield_server' {
 }
 
-node 'pc2', 'pc1' inherits 'bitfield_server' {
+node 'pc1', 'pc2' inherits 'bitfield_server' {
   include admin::ntp
 
   if tagged('pc2') {
