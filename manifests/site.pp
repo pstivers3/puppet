@@ -1,5 +1,6 @@
 node 'pc1' {
   include puppet
+  include admin::stages
 }
 
 node 'pc2' {
