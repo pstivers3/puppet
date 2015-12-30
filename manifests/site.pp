@@ -1,11 +1,13 @@
-node 'pc1' {
+node 'base' {
   include puppet
+  include admin::ntp
+}
+
+node 'pc1' inherits 'base' {
   include admin::stages
 }
 
-node 'pc2' {
-  include puppet
+node 'pc2' inherits 'base' {
   include memcached
-  include admin::ntp
 }
 
