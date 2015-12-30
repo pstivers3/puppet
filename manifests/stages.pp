@@ -1,3 +1,6 @@
+# doesn't work
+# puppet apply stages.pp compiles but doesn't return the notifys
+
 class stages {
   stage { 'first': before => Stage['main'] }
   stage { 'last': require => Stage['main'] }
