@@ -4,7 +4,13 @@ node 'base' {
 }
 
 node 'pc1' inherits 'base' {
-  include admin::stages
+  # include test::stages
+
+  class { 'test::param':
+    param1 => 'woo!',
+    param2 => 'hoo!',
+  }
+
 }
 
 node 'pc2' inherits 'base' {

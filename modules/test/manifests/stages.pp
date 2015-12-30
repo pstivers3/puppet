@@ -1,4 +1,4 @@
-class admin::stages {
+class test::stages {
   stage { 'first': before => Stage['main'] }
   stage { 'last': require => Stage['main'] }
 
