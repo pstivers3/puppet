@@ -3,6 +3,6 @@
 
 node 'pc1' {
 
- include stages.pp
+  include stages.pp
 
 }
