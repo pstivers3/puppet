@@ -6,10 +6,10 @@ node 'base' {
 node 'pc1' inherits 'base' {
   # include test::stages
 
-  class { 'test::param':
-    param1 => 'woo!',
-    param2 => 'hoo!',
-  }
+  # class { 'test::param':
+  #  param1 => 'woo!',
+  #  param2 => 'hoo!',
+  # }
 
 }
 
