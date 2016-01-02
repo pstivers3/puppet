@@ -3,6 +3,10 @@ node 'base' {
   include admin::ntp
 }
 
+node 'FLAM06' {
+  include puppet
+}
+
 node 'pc1' inherits 'base' {
   # include test::stages
 
