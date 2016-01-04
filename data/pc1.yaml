@@ -1,1 +1,2 @@
-greeting : "Hello, I'm the pc1 node!"
+node_greeting : "Hello, I'm the pc1 node!"
+

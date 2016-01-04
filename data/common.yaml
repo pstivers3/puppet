@@ -1,2 +1,3 @@
 magic_word : 'xyzzy'
-greeting : "Hello, I'm some other node!"
+node_greeting : "Hello, I'm some other node!"
+
