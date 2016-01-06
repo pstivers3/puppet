@@ -7,7 +7,10 @@ node 'pc1', 'pc2' {
   notify { $node_greeting: }
 
   $is_virtual_greeting = hiera('is_virtual_greeting')
-  notify { $is_virtual_greeting: }
+  notify { "is_virtual_greeting: $is_virtual_greeting": }
+
+  $my_secret = hiera('my_secret')
+  notify { $my_secret: }
   
 }
 

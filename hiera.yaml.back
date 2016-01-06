@@ -1,0 +1,9 @@
+:hierarchy:
+    - "%{hostname}"
+    - "is_virtual-%{::is_virtual}" 
+    - common
+:backends:
+    - yaml
+:yaml:
+    :datadir: '/home/ubuntu/puppet/data'
+
