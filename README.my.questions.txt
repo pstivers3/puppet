@@ -48,9 +48,9 @@ From Puppet 3 cookbook
 		
   chap 3, dependencies
 	
-    How come puppet doesn't have all dependencies buit in under the hood?
-    Could puppet infer the dependencies based in a directory structure that
-    includes names that match the package names.
+    Strategic/architectural question for discussion. Could puppet have
+    dependencies buit in under the hood if the directory structure in code 
+    included names that match the package names?
 		
     How come the second way to define dependencies throws an error?
  
