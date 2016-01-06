@@ -1,4 +1,4 @@
-class test::stages {
+class exp::stages {
   stage { 'first': before => Stage['main'] }
   stage { 'last': require => Stage['main'] }
 
