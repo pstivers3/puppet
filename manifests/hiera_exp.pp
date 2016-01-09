@@ -1,12 +1,12 @@
-node 'pc1', 'pc2' {
+node 'pm', 'pc1', 'pc2' {
 
   ## test eyaml
   $my_secret = hiera('my_secret')
-  notify { "==> \$my_secret: $::my_secret": } 
+  notify { "==> \$my_secret: $my_secret": } 
  
-  if $::mysecret == 'mysecretstuff_edited' {
+  if $my_secret == 'mysecretstuff_edited' {
     notify { "==> eyaml works!": }
-  } elsif $::mysecret == '' {
+  } elsif $::my_secret == '' {
     notify { "==> \$my_secret is empty": }
   } 
   ## end test eyaml
