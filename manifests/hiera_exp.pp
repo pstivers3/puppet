@@ -1,4 +1,4 @@
-node 'pc1', 'pc2' {
+node 'pm', 'pc1', 'pc2' {
 
   ## test eyaml
   $my_secret = hiera('my_secret')

@@ -7,6 +7,10 @@ node 'FLAM06' {
   include puppet
 }
 
+node 'pm' inherits base {
+
+}
+
 node 'pc1' inherits 'base' {
 
 }
