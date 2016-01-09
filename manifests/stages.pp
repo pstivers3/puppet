@@ -20,4 +20,7 @@ class stages {
   class { 'me_last':
     stage => 'last',
   }
+
 }
+
+include stages
