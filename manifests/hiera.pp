@@ -1,3 +1,6 @@
+# eyaml is configured on pc2, not on pc1
+# this manifest will not run on pc1
+
 node 'pm', 'pc1', 'pc2' {
 
   ## test eyaml
