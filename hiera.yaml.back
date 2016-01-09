@@ -1,9 +1,17 @@
 :hierarchy:
-    - "%{hostname}"
-    - "is_virtual-%{::is_virtual}" 
-    - common
+  - secure
+  - "%{fqdn}"
+  - "%{environment}" 
+  - "%{hostname}"
+  - "is_virtual-%{::is_virtual}" 
+  - common
 :backends:
-    - yaml
+  - eyaml
+  - yaml
 :yaml:
-    :datadir: '/home/ubuntu/puppet/data'
-
+  :datadir: '/home/ubuntu/puppet/data'
+:eyaml:
+  :datadir: '/home/ubuntu/puppet/data'
+  :pkcs7_private_key: /etc/puppet/secure/keys/private_key.pkcs7.pem
+  :pkcs7_public_key: /etc/puppet/secure/keys/public_key.pkcs7.pem
+  # :extension: 'yaml' # would make eyaml read files with .yaml and not .eyaml extension

@@ -17,7 +17,6 @@ node 'pc1' inherits 'base' {
 
 node 'pc2' inherits 'base' {
   include memcached
-  include hiera
-
+  # include hiera # couldn't find
 }
 
