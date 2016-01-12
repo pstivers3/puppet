@@ -9,11 +9,11 @@ node 'FLAM06' {
 }
 
 node 'pm' {
-  include Class['base']
+  include base 
 }
 
 node 'pc1' {
-  include Class['base']
+  include base
 }
 
 node 'pc2' {

@@ -2,6 +2,12 @@
 # run a script in cron to do same
 
 class puppet {
+  
+  file { '/tmp/paultest.txt':
+    source => 'puppet:///modules/puppet/paultest.txt',
+    mode   => '0644',
+  }
+
 
   file { '/usr/local/bin/papply':
     source => 'puppet:///modules/puppet/papply.sh',
