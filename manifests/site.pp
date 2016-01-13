@@ -8,15 +8,15 @@ node 'FLAM06' {
   include puppet
 }
 
-node 'pm' {
+node 'puppet' {
   include base 
 }
 
-node 'pc1' {
+node 'pc1.cisops.vericity.net' {
   include base
 }
 
-node 'pc2' {
+node 'pc2.cisops.vericity.net' {
   # include Class['base']
   include base
   include memcached
