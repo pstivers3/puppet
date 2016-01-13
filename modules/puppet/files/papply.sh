@@ -12,10 +12,10 @@ if [ "$help_state" = help ] || [ "$help_state" = -h ] || [ "$help_state" = --hel
     exit 0
 elif [ "$file_pp" = '' ]; then
   echo "applying site.pp"
-  sudo puppet apply /home/ubuntu/paul-puppet/manifests/site.pp --modulepath=/home/ubuntu/paul-puppet/modules/ --hiera_config=/home/ubuntu/paul-puppet/hiera.yaml $*
+  sudo puppet apply /home/ubuntu/puppet/manifests/site.pp --modulepath=/home/ubuntu/puppet/modules/ --hiera_config=/home/ubuntu/puppet/hiera.yaml $*
 else
   echo "applying $file_pp"
-  sudo puppet apply $file_pp --modulepath=/home/ubuntu/paul-puppet/modules/ --hiera_config=/home/ubuntu/paul-puppet/hiera.yaml
+  sudo puppet apply $file_pp --modulepath=/home/ubuntu/puppet/modules/ --hiera_config=/home/ubuntu/puppet/hiera.yaml
 fi
 
 exit 0
