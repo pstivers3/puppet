@@ -1,5 +1,4 @@
 class base { 
-# class { 'base': 
   include puppet
   include admin::ntp
 }
@@ -17,9 +16,7 @@ node 'pc1.cisops.vericity.net' {
 }
 
 node 'pc2.cisops.vericity.net' {
-  # include Class['base']
   include base
   include memcached
-  # include hiera # couldn't find
 }
 
