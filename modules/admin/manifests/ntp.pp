@@ -1,11 +1,15 @@
 # Manage NTP
-class admin::ntp {
+# parameterized
+class admin::ntp (
+  $package_status = 'installed',
+  $service_status   = 'running',
+) {
   package { 'ntp':
-    ensure => installed,
+    ensure => $package_status,
   }
 
   service { 'ntp':
-    ensure  => running,
+    ensure  => $service_status,
     require => Package['ntp'],
   }
 

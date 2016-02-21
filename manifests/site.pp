@@ -12,7 +12,12 @@ node 'puppet' {
 }
 
 node 'pc1.cisops.vericity.net' {
-  include base
+  include puppet
+  class { 'admin::ntp':
+    # package_status   => installed,
+    service_status   => running,
+    # service_status   => stopped,
+  }
 }
 
 node 'pc2.cisops.vericity.net' {
