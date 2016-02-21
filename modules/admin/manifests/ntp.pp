@@ -20,7 +20,6 @@ class admin::ntp (
 
     # Another way to do it
     # Package['ntp'] -> File['/etc/ntp.conf'] ~> Service['ntp'], # throws a syntax error 
-    # File['/etc/ntp.conf'] ~> Package['ntp'] -> Service['ntp'], # swap position of File and Package as a test. Same syntax error.
+    # File['/etc/ntp.conf'] ~> Package['ntp'] -> Service['ntp'], # swap position of File and Package as a test. Same error.
   }
-
 }
